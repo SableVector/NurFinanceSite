@@ -1,0 +1,58 @@
+/* ======================= POLICY ======================= */
+
+.policy {
+    padding: 50px 0;
+    font-size: 16px;
+    line-height: 25px;
+    background-color: rgb(245, 243, 243);
+
+    .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid $main-color;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 20px 0;
+    }
+
+    ul {
+        padding-left: 40px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    ol {
+        padding-left: 40px;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        list-style: revert;
+    }
+
+    li {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    &__title,
+    &__subtitle {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}

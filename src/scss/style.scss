@@ -1,0 +1,18 @@
+// @import "libs/reset";
+// @import "libs/normalize";
+@import "global/variables";
+@import "global/mixin";
+@import "global/fonts";
+// === Глобальные стили ===
+@import "global/global";
+@import "global/buttons";
+
+// === Стили Блоков ===
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";
+// === / Стили Блоков ===
+
+// === Стили политики конфиденциальности ===
+// @import "global/policy";
+// === / Стили политики конфиденциальности ===

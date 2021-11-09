@@ -1,0 +1,79 @@
+/* ======================= GLOBAL STYLES ======================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: $fontFamily;
+    font-size: $size-text;
+    font-weight: $fw-regular;
+    line-height: $line-height;
+    color: $color-text;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+a {
+    font-family: $fontFamily;
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    // &._loaded {
+    // }
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.container {
+    max-width: $maxWidthContainer + px;
+    padding: 0 15px;
+    margin: 0 auto;
+    // @media (max-width: $md1+px) {
+    //     max-width: 970px;
+    // }
+    // @media (max-width: $md2+px) {
+    //     max-width: 750px;
+    // }
+    // @media (max-width: $md3+px) {
+    //     max-width: none;
+    //     padding: 0 10px;
+    // }
+}

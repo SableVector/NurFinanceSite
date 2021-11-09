@@ -1,0 +1,48 @@
+// ======================= VARIABLES =======================
+
+/* =============== ФУНКЦИЯ ПРЕОБРАЗОВАНИЯ PX В REM =============== */
+$root-font-size: 16px;
+
+@function rem($size) {
+    @return $size / $root-font-size * 1rem;
+}
+
+html {
+    font-size: ($root-font-size / 16px) * 100%;
+}
+
+// Переменные ========================
+$transition: all 0.2s ease-in;
+$b: 2px;
+// $b: rem(2px);
+
+// Переменная цвета ========================
+$color-main: #000;
+// $color-secondary: #f68038;
+// $color-white: #fff;
+// $color-dark: #0f0f0f;
+// $color-warning: #f68038;
+// $color-danger: #f68038;
+// $color-success: #f68038;
+
+// Переменные шрифтов========================
+$fontFamily: arial, helvetica, sans-serif;
+$color-text: #000;
+$size-text: $b * 7;
+$line-height: 14 / 14 * 100%; /* первое - высота строка, второе - размер шрифта */
+// $fw-thin : 100;
+// $fw-light : 300;
+$fw-regular: 400;
+// $fw-medium: 500;
+// $fw-semiBold: 600;
+// $fw-bold: 700;
+// $fw-black: 900;
+
+// Переменные ===============================
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 30;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
