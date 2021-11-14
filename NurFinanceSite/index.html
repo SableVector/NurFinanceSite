@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Название сайта</title>
+	<title>НурФинанс - Инвестиционно-финансовая компания</title>
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
+	<script defer src="js/main.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +16,96 @@
 
 <header class="header">
     <div class="container">
-        HEADER
+        <div class="header__wrapper">
+            <div class="header__top">
+                <nav class="header__top-nav">
+                    <a class="header__top-link" href="#">Инвестиционно-финансовая компания</a>
+                    <div class="header__top-city">
+                        <svg class="header__top-icon">
+                            <use xlink:href="img/icons/symbol/sprite.svg#icons--arrow-nav"></use>
+                        </svg>
+                        <span>Город</span>
+                        <select class="header__top-select" name="city" id="city">
+                            <option class="header__top-option" value="Казань">Львов</option>
+                            <option class="header__top-option" value="Чернигов">Чернигов</option>
+                            <option class="header__top-option" value="Чернигов">Киев</option>
+                            <option class="header__top-option" value="Чернигов">Харьков</option>
+                            <option class="header__top-option" value="Чернигов">Черкасы</option>
+                        </select>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Отзывы</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Халяль подробно</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Отчетность</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Наши партнеры</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Сотрудничество</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Контакты
+                                <svg class="menu__item-icon">
+                                    <use xlink:href="img/icons/symbol/sprite.svg#icons--Map-trifold"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                    <div class="header__top-language">
+                        <select class="header__top-select" name="language" id="language">
+                            <option class="header__top-option" value="RU">RU</option>
+                            <option class="header__top-option" value="EN">EN</option>
+                        </select>
+                    </div>
+                </nav>
+            </div>
+            <!-- /.header__top -->
+            <div class="header__bottom">
+
+                <div class="logo header__bottom-logo">
+                    <a class="logo__link" href="index.html">
+                        <img class="logo__img" src="img/logo.svg" alt="Логотип">
+                    </a>
+                </div>
+                <!-- /.logo -->
+
+                <ul class="header__bottom-finance">
+                    <li class="header__bottom-finance-item">
+                        <a class="header__bottom-finance-link" href="#">Инвестиции</a>
+                    </li>
+                    <li class="header__bottom-finance-item">
+                        <a class="header__bottom-finance-link" href="#">Рассрочка</a>
+                    </li>
+                    <li class="header__bottom-finance-item">
+                        <a class="header__bottom-finance-link" href="#">Калькулятор</a>
+                    </li>
+                </ul>
+                <!-- /.header__bottom-finance -->
+
+                <div class="header__bottom-phone">
+                    <a class="header__bottom-phone-link" href="tel:88002700700">
+                        <svg class="header__bottom-phone-icon">
+                            <use xlink:href="img/icons/symbol/sprite.svg#icons--Phone"></use>
+                        </svg>
+                        8 800 2700 700
+                    </a>
+                </div>
+                <!-- /.header__bottom-phone -->
+
+                <form class="header__bottom-search">
+                    <button class="header__bottom-search-btn" type="button">
+                        <svg class="header__bottom-search-icon">
+                            <use xlink:href="img/icons/symbol/sprite.svg#icons--MagnifyingGlass"></use>
+                        </svg>
+                    </button>
+                    <input class="header__bottom-search-input" type="search">
+                </form>
+                <!-- /.header__bottom-search -->
+
+                <div class="header__bottom-btns">
+                    <a class="btn btn__primery header__bottom-btn" href="#">Личный Кабинет</a>
+                    <a class="btn btn__secondary header__bottom-btn" href="#">Онлайн Заявка</a>
+                </div>
+                <!-- /.header__bottom-btn -->
+
+            </div>
+            <!-- /.header__bottom -->
+        </div>
     </div>
 </header>
 		<!-- ======================= MAIN ======================= -->
@@ -30,7 +121,214 @@
 
 <footer class="footer">
     <div class="container">
-        FOOTER
+
+        <div class="footer__wrapper">
+
+
+            <div class="footer__left">
+
+                <div class="logo footer__logo">
+                    <a class="logo__link" href="index.html">
+                        <img class="logo__img" src="img/logo.svg" alt="Логотип">
+                    </a>
+                </div>
+                <!-- /.logo -->
+
+                <div class="footer__contacts">
+                    <a class="footer__contacts-phone" href="tel:88002700700">8 800 2700 700</a>
+                    <a class="footer__contacts-email" href="mailto:support@nur.finance">support@nur.finance</a>
+                </div>
+                <!-- /.footer__contacts -->
+
+                <div class="footer__address">
+                    <address>Казань, ул. Мавлютова, дом 31</address>
+                    <span>Мы работаем с 08:00 до 20:00</span>
+                </div>
+
+                <div class="footer__social">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" target="_blanck" href="https://www.facebook.com/">
+                                <svg class="footer__social-icon">
+                                    <use xlink:href="img/icons/symbol/sprite.svg#icons--FacebookLogo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- /.footer__social-item -->
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" target="_blanck" href="https://www.whatsapp.com/">
+                                <svg class="footer__social-icon">
+                                    <use xlink:href="img/icons/symbol/sprite.svg#icons--WhatsappLogo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- /.footer__social-item -->
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" target="_blanck" href="https://web.telegram.org/z/">
+                                <svg class="footer__social-icon">
+                                    <use xlink:href="img/icons/symbol/sprite.svg#icons--TelegramLogo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- /.footer__social-item -->
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" target="_blanck" href="https://youtube.com">
+                                <svg class="footer__social-icon">
+                                    <use xlink:href="img/icons/symbol/sprite.svg#icons--YoutubeLogo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- /.footer__social-item -->
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" target="_blanck" href="https://www.instagram.com/">
+                                <svg class="footer__social-icon">
+                                    <use xlink:href="img/icons/symbol/sprite.svg#icons--InstagramLogo"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <!-- /.footer__social-item -->
+                    </ul>
+                    <!-- /.footer__social-list -->
+                </div>
+                <!-- /.footer__social -->
+
+            </div>
+            <!-- /.footer__left -->
+
+            <div class="footer__right">
+
+                <div class="footer__search">
+                    <form class="footer__search-form" action="#">
+                        <button class="footer__search-btn" type="submit">
+                            <svg class="footer__search-icon">
+                                <use xlink:href="img/icons/symbol/sprite.svg#icons--MagnifyingGlass"></use>
+                            </svg>
+                        </button>
+                        <label class="visually-hidden" for="search">Поиск</label>
+                        <input class="footer__search-input" type="text" name="search" placeholder="Поиск по услугам">
+                    </form>
+                    <!-- /.footer__search-form -->
+                </div>
+                <!-- /.footer__search -->
+
+                <div class="footer__menu">
+
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-title">Инвестиции</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Вклад Накопительный</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Вклад Активный</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Вклад Комфорт</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Калькулятор</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Отзывы по инвестициям</a>
+                            </li>
+                            <!-- /.footer__menu-item -->
+                        </ul>
+                        <!-- /.footer__menu-list -->
+                    </div>
+                    <!-- /.footer__menu-col -->
+
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-title">Рассрочка</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">АвтоРассрочка</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Долевое финансирование</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Долговое финансирование</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Калькулятор</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Отзывы по займам</a>
+                            </li>
+                            <!-- /.footer__menu-item -->
+                        </ul>
+                        <!-- /.footer__menu-list -->
+                    </div>
+                    <!-- /.footer__menu-col -->
+
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-title">Компания</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">О компании</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Новости</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Отчетность</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Сотрудничество</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Реквизиты</a>
+                            </li>
+                            <!-- /.footer__menu-item -->
+                        </ul>
+                        <!-- /.footer__menu-list -->
+                    </div>
+                    <!-- /.footer__menu-col -->
+
+                    <div class="footer__menu-col">
+                        <h3 class="footer__menu-title">Информация</h3>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Халяль подробно</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Наши партнеры</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Частые вопросы</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Личный кабинет</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Контакты</a>
+                            </li>
+                            <!-- /.footer__menu-item -->
+                        </ul>
+                        <!-- /.footer__menu-list -->
+                    </div>
+                    <!-- /.footer__menu-col -->
+
+                </div>
+                <!-- /.footer__menu -->
+
+            </div>
+            <!-- /.footer__right -->
+
+        </div>
+        <!-- /.footer__wrapper -->
+
+        <div class="footer__bottom">
+            <div class="footer__bottom-copy">
+                &copy; 2021 АО «НурФинанс»
+            </div>
+            <!-- /.footer__bottom-copy -->
+            <a class="footer__bottom-poly" href="policy.html">
+                Политика конфиденциальности
+            </a>
+            <!-- /.footer__bottom-poly -->
+        </div>
+        <!-- /.footer__bottom -->
     </div>
 </footer>
 	</div>

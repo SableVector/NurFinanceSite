@@ -26,22 +26,23 @@ $color-main: #000;
 // $color-success: #f68038;
 
 // Переменные шрифтов========================
-$fontFamily: arial, helvetica, sans-serif;
+$fontFamily: "Ubuntu", sans-serif;
+$fontFamilySecondary: "SFProText", sans-serif;
 $color-text: #000;
-$size-text: $b * 7;
-$line-height: 14 / 14 * 100%; /* первое - высота строка, второе - размер шрифта */
+$size-text: $b * 8;
+$line-height: 16 / 14 * 100%; /* первое - высота строка, второе - размер шрифта */
 // $fw-thin : 100;
-// $fw-light : 300;
+$fw-light: 300;
 $fw-regular: 400;
-// $fw-medium: 500;
-// $fw-semiBold: 600;
-// $fw-bold: 700;
+$fw-medium: 500;
+$fw-semiBold: 600;
+$fw-bold: 700;
 // $fw-black: 900;
 
 // Переменные ===============================
 $minWidth: 320;
 $maxWidth: 1920;
-$maxWidthContainer: 1170;
+$maxWidthContainer: 1275;
 $md1: $maxWidthContainer + 30;
 $md2: 991.98;
 $md3: 767.98;

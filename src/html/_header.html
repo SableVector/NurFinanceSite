@@ -2,6 +2,95 @@
 
 <header class="header">
     <div class="container">
-        HEADER
+        <div class="header__wrapper">
+            <div class="header__top">
+                <nav class="header__top-nav">
+                    <a class="header__top-link" href="#">Инвестиционно-финансовая компания</a>
+                    <div class="header__top-city">
+                        <svg class="header__top-icon">
+                            <use xlink:href="img/icons/symbol/sprite.svg#icons--arrow-nav"></use>
+                        </svg>
+                        <span>Город</span>
+                        <select class="header__top-select" name="city" id="city">
+                            <option class="header__top-option" value="Казань">Львов</option>
+                            <option class="header__top-option" value="Чернигов">Чернигов</option>
+                            <option class="header__top-option" value="Чернигов">Киев</option>
+                            <option class="header__top-option" value="Чернигов">Харьков</option>
+                            <option class="header__top-option" value="Чернигов">Черкасы</option>
+                        </select>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__item-link" href="#">О компании</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Отзывы</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Халяль подробно</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Отчетность</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Наши партнеры</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Сотрудничество</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="#">Контакты
+                                <svg class="menu__item-icon">
+                                    <use xlink:href="img/icons/symbol/sprite.svg#icons--Map-trifold"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                    <div class="header__top-language">
+                        <select class="header__top-select" name="language" id="language">
+                            <option class="header__top-option" value="RU">RU</option>
+                            <option class="header__top-option" value="EN">EN</option>
+                        </select>
+                    </div>
+                </nav>
+            </div>
+            <!-- /.header__top -->
+            <div class="header__bottom">
+
+                <div class="logo header__bottom-logo">
+                    <a class="logo__link" href="index.html">
+                        <img class="logo__img" src="img/logo.svg" alt="Логотип">
+                    </a>
+                </div>
+                <!-- /.logo -->
+
+                <ul class="header__bottom-finance">
+                    <li class="header__bottom-finance-item">
+                        <a class="header__bottom-finance-link" href="#">Инвестиции</a>
+                    </li>
+                    <li class="header__bottom-finance-item">
+                        <a class="header__bottom-finance-link" href="#">Рассрочка</a>
+                    </li>
+                    <li class="header__bottom-finance-item">
+                        <a class="header__bottom-finance-link" href="#">Калькулятор</a>
+                    </li>
+                </ul>
+                <!-- /.header__bottom-finance -->
+
+                <div class="header__bottom-phone">
+                    <a class="header__bottom-phone-link" href="tel:88002700700">
+                        <svg class="header__bottom-phone-icon">
+                            <use xlink:href="img/icons/symbol/sprite.svg#icons--Phone"></use>
+                        </svg>
+                        8 800 2700 700
+                    </a>
+                </div>
+                <!-- /.header__bottom-phone -->
+
+                <form class="header__bottom-search">
+                    <button class="header__bottom-search-btn" type="button">
+                        <svg class="header__bottom-search-icon">
+                            <use xlink:href="img/icons/symbol/sprite.svg#icons--MagnifyingGlass"></use>
+                        </svg>
+                    </button>
+                    <input class="header__bottom-search-input" type="search">
+                </form>
+                <!-- /.header__bottom-search -->
+
+                <div class="header__bottom-btns">
+                    <a class="btn btn__primery header__bottom-btn" href="#">Личный Кабинет</a>
+                    <a class="btn btn__secondary header__bottom-btn" href="#">Онлайн Заявка</a>
+                </div>
+                <!-- /.header__bottom-btn -->
+
+            </div>
+            <!-- /.header__bottom -->
+        </div>
     </div>
 </header>

@@ -59,6 +59,8 @@ let path = {
 		coppyCss: sourceFolder + "/css/**/*.css",
 		/* Папка с дополнениями libs */
 		libs: projectFolder + "/libs/**/*.*",
+		/* Папка с SVG ионками */
+		iconSvg: sourceFolder + "/img/icons/**/*.svg",
 	},
 
 	/* Путь удаление папки при каждом запуске Gulp */
@@ -324,6 +326,7 @@ const watchFiles = () => {
 	gulp.watch([path.watch.img], images);
 	gulp.watch([path.watch.coppyCss], coppyCss);
 	gulp.watch([path.watch.css], lintCss);
+	gulp.watch([path.watch.iconSvg], createSvgSprite);
 }
 
 /* Функция для удаления папки при каждом запуске Gulp*/

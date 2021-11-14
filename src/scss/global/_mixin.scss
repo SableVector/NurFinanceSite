@@ -10,3 +10,20 @@
         font-weight: #{$weight};
     }
 }
+
+// ======================================================
+
+@mixin hover-menu {
+    @media (min-width: $md3+px) {
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: #000;
+            border-bottom: 1px solid #000;
+        }
+    }
+}
+
+@mixin transition {
+    transition: all 0.3s ease-in-out;
+}

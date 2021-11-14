@@ -1,1 +1,37 @@
 /* ======================= BUTTONS ======================= */
+.btn {
+    padding: 14px 30px;
+    font-size: 14px;
+    font-weight: $fw-medium;
+    line-height: 110%;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 20px 0;
+
+    @include transition;
+
+    &__primery {
+        color: #fff;
+        background: #0000de;
+        border: 1px solid #0000de;
+
+        @media (min-width: $md3+px) {
+            &:hover {
+                color: #0000de;
+                background: #fff;
+            }
+        }
+    }
+
+    &__secondary {
+        color: #0000de;
+        background: #fff;
+        border: 1px solid #fff;
+
+        @media (min-width: $md3+px) {
+            &:hover {
+                border: 1px solid #0000de;
+            }
+        }
+    }
+}
